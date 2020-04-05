@@ -321,3 +321,76 @@ toJSON(commit)
   tem=25
 )
 ```
+
+```{r}
+`天氣預報` <- list(
+  `台北市氣溫`=list(`日期`=ymd("2020-03-31","2020-04-01"),city1="台北市",`最高氣溫`="25",`最低氣溫`="18")
+  `新北市氣溫`=list(
+    city2="新北市",`最高氣溫`="24",`最低氣溫`="15")
+）
+print(`天氣預報`)
+
+```
+
+```{r}
+weather_forecast <- list(
+  city="台北市",
+  date=list(
+    today=ymd("2020-03-31"),
+    tomorrow=ymd("2020-04-01")),
+  MaxT=25,
+  MinT=18,
+  city="新北市",
+  date=list(
+    today=ymd("2020-03-31"),
+    tomorrow=ymd("2020-04-01")),
+
+  MaxT=24,
+  MinT=15
+)
+print(weather_forecast)
+```
+
+```{r}
+weather=list(
+`今日雙北天氣`=list(
+   time=ymd("2020-03-31"),
+   `台北市`=list(
+   `the highest temperature`=25,
+   `the lowest temperature`=18),
+   `新北市`=list(
+   `the highest temperature`=24,
+   `the lowest temperature`=15)
+  ),
+`明日雙北天氣`=list(
+   time=ymd("2020-04-01"),
+   `台北市`=list(
+   `the highest temperature`=25,
+   `the lowest temperature`=18
+   ),
+   `新北市`=list(
+   `the highest temperature`=24,
+   `the lowest temperature`=15
+   )
+  )
+)
+print(weather)
+```
+
+```{r}
+ `weather`=list( 
+   `台北市氣溫`=list(
+   time=ymd("2020-03-31","2020-04-01"),
+   `台北市`=list(
+   `the highest temperature`=25,
+   `the lowest temperature`=18)
+  ),
+   `新北市氣溫`=list(
+   time=ymd("2020-03-31","2020-04-01"),
+   `新北市`=list(
+   `the highest temperature`=24,
+   `the lowest temperature`=15)
+  )
+ )
+print(weather)
+```
