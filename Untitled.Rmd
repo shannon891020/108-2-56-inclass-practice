@@ -153,3 +153,171 @@ homework_sheet <- sheets_read(ss,sheet=1)
 ```{r}
 logi1 <- c(T,TRUE,F,FALSE,FALSE)
 ```
+
+```{r}
+vectorexample <-c(2,6,7)
+listexample<-list(2,6,7)
+
+print(vectorexample)
+print(listexample)
+```
+```{r}
+library(googlesheets4)
+library(dplyr)
+library(lubridate)
+```
+
+```{r}
+#用vector儲存
+c("2020-03-32T13:40:55z",
+"一芳",
+"2",
+"水果茶")
+
+#用list儲存
+library(lubridate)
+list(
+ ymd_hms ("2020-03-32T13:40:55z"),#date/time
+"一芳",#character
+2,#numeric
+"水果茶"#character
+)
+print("小明交易1")
+
+```
+
+```{r}
+#用vector
+c(
+  c("108學年第1學期","高等會計學","高等統計學"),
+  c("108學年第2學期","食在拉丁美洲")
+)
+
+#用list
+list( 
+  c("108學年第1學期","高等會計學","高等統計學"),
+  c("108學年第2學期","食在拉丁美洲")
+)
+
+```
+```{r}
+#list含兩個vectors
+`小明108學年課表A` <-list(
+  c("108-1","高等會計學","高等統計學"),
+  c("108-2","食在拉頂美洲")
+)
+print(`小明108學年課表A`)
+```
+
+```{r}
+#list含兩個lists
+`小明108學年課表A` <-list(
+  list("108-1","高等會計學","高等統計學"),
+  list("108-2","食在拉頂美洲")
+)
+print(`小明108學年課表A`)
+```
+```{r}
+#list含兩個lists
+`小明108學年課表c` <-list(
+  list(
+    c("108-1"),
+    c("高等會計學","高等統計學")
+    ),
+  list(
+    c("108-2"),
+    c("食在拉頂美洲")
+  )
+)
+print(`小明108學年課表c`)
+```
+物件可以取名
+```{r}
+`小明108學年課表c` <-list(
+  `上學期`=list(
+    semester=c("108-1"),
+    courses=c("高等會計學","高等統計學")
+    ),
+  `下學期`=list(
+    semester=c("108-2"),
+    course=c("食在拉頂美洲")
+  )
+)
+print(`小明108學年課表c`)
+```
+
+```{r}
+commit <-list(
+  author1 = list(
+    name="Martin老師",
+    email="mtlin@gm.ntpu.edu.tw",
+    time="2020-03-25T07:17:40Z"),
+  author2 = list(
+    name="Martin老師",
+    email="mtlin@gm.ntpu.edu.tw",
+    time=ymd_hms("2020-03-25T07:17:40Z")),
+  committer = list (
+    "emilyluckey",
+    "emily007@gmail.com",
+    ymd_hms("2020-03-26T08:18:40Z")
+  ),
+  message = "update"
+)
+print(commit)
+#  committer = ,
+#  message = 
+# )
+```
+
+```{r}
+commit <-list(
+  author = list(
+    name="Martin老師",
+    email="mtlin@gm.ntpu.edu.tw",
+    time=("2020-03-25T07:17:40Z")
+    ),
+  committer = list (
+    name="emilyluckey",
+    emsil="emily007@gmail.com",
+    time=ymd_hms("2020-03-26T08:18:40Z")
+  ),
+  message = "update"
+)
+print(commit)
+#  committer = ,
+#  message = 
+# )
+```
+
+```{r}
+library(jsonlite)
+toJSON(commit)
+```
+
+```{r}
+`108學年第一學期`<-list(
+  event1 = list(
+    name="Alice老師",
+    courses="個體經濟學",
+    score="85")
+)
+  event2 = list(
+    name="Mark老師",
+    courses="總體經濟學",
+    score="73")
+`108學年第二學期`<-list(
+  event3 = list(
+    name="Jason老師",
+    courses="作業研究",
+    score="90")
+)
+```
+
+```{r}
+"2020-03-31-2020-04-01"<-list(
+  name="台北市",
+  tem=24,
+  name="新北市",
+  tem=25
+)
+```
