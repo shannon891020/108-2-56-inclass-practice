@@ -408,3 +408,138 @@ print(weather)
 )
 print(weather)
 ```
+```{r}
+vectorExample <- c("小明","小英","大雄")
+#有多少位置可以選：
+length(vectorExample)
+```
+```{r}
+vectorExample[[1]]
+vectorExample[[3]]
+```
+
+```{r}
+listExample <-
+  list(
+    student="小明",
+    `學期`=list(
+      `108-1`=list(
+        list(
+          name="個體經濟學",
+          teacher="alice",
+          grade=85
+        )
+      ),
+      `108-2`=list(
+        list(
+          name="總體經濟學",
+          teacher="mark",
+          grade=78
+        )
+      )
+    )
+  )
+length(listExample)
+```
+```{r}
+listExample[[1]]
+listExample[[2]]
+```
+```{r}
+library(jsonlite)
+fromJSON("https://data.tainan.gov.tw/dataset/4cd9345a-04bf-4328-a97d-314ff78b4763/resource/afc025fc-1ef4-447c-b785-a680391d0ca1/download/tnsport2.json", simplifyDataFrame = F) -> tainanSportsMap
+
+length(tainanSportsMap)
+```
+```{r}
+names(listExample)
+```
+```{r}
+listExample$student
+listExample$`學期`
+```
+```{r}
+listExample[["student"]]
+listExample$student
+
+listExample[["學期"]]
+listExample$`學期`
+```
+```{r}
+fromJSON("http://data.ntpc.gov.tw/api/v1/rest/datastore/382000000A-000157-002",
+         simplifyDataFrame = F) -> newTaipeiCityVaccine
+```
+```{r}
+str(newTaipeiCityVaccine[[1]])
+str(newTaipeiCityVaccine$success)
+str(newTaipeiCityVaccine[["success"]])
+```
+
+```{r}
+
+str(listExample)
+```
+
+```{r}
+tainanSportsMap[[1]]
+tainanSportsMap[[1076]]
+```
+```{r}
+vectorExample
+vectorExample[c(1,3)]
+vectorExample[c(3,2,1)]
+```
+```{r}
+str(listExample,max.level=1)
+str(listExample[c(1,2)],max.level=1)
+str(listExample[c(2,1)],max.level=1)
+listExample[c(1,2)]
+```
+```{r}
+fromJSON("https://www.dropbox.com/s/qnm9bnz7vccrvcz/taipeiNightMarkets.json?dl=1", simplifyDataFrame = F)->taipeiNightMarkets
+```
+```{r}
+vectorExample
+vectorExample[c(T,T,F)]
+```
+```{r}
+names(taipeiNightMarkets)
+```
+```{r}
+c(T,F,F,F,T,F,F,F,F,T,F,F,T) ->taipeiNightMarkets
+str(taipeiNightMarkets[c(T,F,F,F,T,F,F,F,F,T,F,F,T)],max.level=1)
+```
+
+```{r}
+numVector<-c(2,3,6,-1,4,3,6)
+select1<-numVector[c(1,4)]; select1
+select2<-select[[1]]; select2
+numVector[c(1,4)[1]]
+```
+
+```{r}
+majors <- c("經濟學系","經濟學系","社會學系","社工系","經濟學系")
+names <- c("小英", "小美", "大雄","阿華", "阿尼")
+gender <- c("F","F","M","F","M")
+
+str(majors[c(T,T,F,F,T)])<-econOnly
+str
+
+```
+```{r}
+if(!require("readr")){
+  install.packages("readr")
+}
+sink("report.txt")
+Sys.getenv()
+Sys.getlocale()
+readr::locale()
+sessionInfo()
+sink()
+warning(
+  'Please upload the following file: \n',
+  file.path(getwd(),"report.txt"),
+  '\nto the following website:\n',
+  'https://forms.gle/vPoQ1MC4cNEJuNqM8'
+)
+```

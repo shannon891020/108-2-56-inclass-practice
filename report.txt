@@ -1,0 +1,92 @@
+__CF_USER_TEXT_ENCODING        0x1F5:0x2:0x35
+CLICOLOR_FORCE                 1
+DISPLAY                        :0
+DYLD_FALLBACK_LIBRARY_PATH     /Library/Frameworks/R.framework/Resources/lib:/Users/katharine/lib:/usr/local/lib:/usr/lib:::/lib:/Library/Java/JavaVirtualMachines/jdk-11.0.1.jdk/Contents/Home/lib/server
+EDITOR                         vi
+GIT_ASKPASS                    rpostback-askpass
+HOME                           /Users/katharine
+LANG                           zh_TW.UTF-8
+LC_CTYPE                       zh_TW.UTF-8
+LN_S                           ln -s
+LOGNAME                        katharine
+MAKE                           make
+MPLENGINE                      tkAgg
+PAGER                          /usr/bin/less
+PATH                           /usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin
+R_BROWSER                      /usr/bin/open
+R_BZIPCMD                      /usr/bin/bzip2
+R_DOC_DIR                      /Library/Frameworks/R.framework/Resources/doc
+R_GZIPCMD                      /usr/bin/gzip
+R_HOME                         /Library/Frameworks/R.framework/Resources
+R_INCLUDE_DIR                  /Library/Frameworks/R.framework/Resources/include
+R_LIBS_SITE                    
+R_LIBS_USER                    ~/Library/R/3.6/library
+R_PAPERSIZE                    a4
+R_PDFVIEWER                    /usr/bin/open
+R_PLATFORM                     x86_64-apple-darwin15.6.0
+R_PRINTCMD                     lpr
+R_QPDF                         /Library/Frameworks/R.framework/Resources/bin/qpdf
+R_RD4PDF                       times,inconsolata,hyper
+R_SESSION_TMPDIR               /var/folders/gn/j316n5jx4kzdryg03jn51xsm0000gn/T//RtmpRVNXyD
+R_SHARE_DIR                    /Library/Frameworks/R.framework/Resources/share
+R_STRIP_SHARED_LIB             strip -x
+R_STRIP_STATIC_LIB             strip -S
+R_SYSTEM_ABI                   osx,gcc,gxx,gfortran,gfortran
+R_TEXI2DVICMD                  /usr/local/bin/texi2dvi
+R_UNZIPCMD                     /usr/bin/unzip
+R_ZIPCMD                       /usr/bin/zip
+RMARKDOWN_MATHJAX_PATH         /private/var/folders/gn/j316n5jx4kzdryg03jn51xsm0000gn/T/AppTranslocation/0400C2C4-DC6B-4D79-A6F2-9C3233349B6B/d/RStudio.app/Contents/Resources/resources/mathjax-26
+RS_PPM_FD_READ                 15
+RS_PPM_FD_WRITE                16
+RS_RPOSTBACK_PATH              /private/var/folders/gn/j316n5jx4kzdryg03jn51xsm0000gn/T/AppTranslocation/0400C2C4-DC6B-4D79-A6F2-9C3233349B6B/d/RStudio.app/Contents/MacOS/rpostback
+RS_SHARED_SECRET               82356444011154381651784484492
+RSTUDIO                        1
+RSTUDIO_CONSOLE_COLOR          256
+RSTUDIO_CONSOLE_WIDTH          105
+RSTUDIO_PANDOC                 /private/var/folders/gn/j316n5jx4kzdryg03jn51xsm0000gn/T/AppTranslocation/0400C2C4-DC6B-4D79-A6F2-9C3233349B6B/d/RStudio.app/Contents/MacOS/pandoc
+RSTUDIO_SESSION_PORT           36682
+RSTUDIO_USER_IDENTITY          katharine
+RSTUDIO_WINUTILS               bin/winutils
+SED                            /usr/bin/sed
+SHELL                          /bin/bash
+SSH_ASKPASS                    rpostback-askpass
+SSH_AUTH_SOCK                  /private/tmp/com.apple.launchd.2CCaBguJh1/Listeners
+TAR                            /usr/bin/tar
+TERM                           xterm-256color
+TMPDIR                         /var/folders/gn/j316n5jx4kzdryg03jn51xsm0000gn/T/
+USER                           katharine
+XPC_FLAGS                      0x0
+XPC_SERVICE_NAME               org.rstudio.RStudio.8320
+[1] "zh_TW.UTF-8/zh_TW.UTF-8/zh_TW.UTF-8/C/zh_TW.UTF-8/zh_TW.UTF-8"
+<locale>
+Numbers:  123,456.78
+Formats:  %AD / %AT
+Timezone: UTC
+Encoding: UTF-8
+<date_names>
+Days:   Sunday (Sun), Monday (Mon), Tuesday (Tue), Wednesday (Wed), Thursday (Thu), Friday (Fri),
+        Saturday (Sat)
+Months: January (Jan), February (Feb), March (Mar), April (Apr), May (May), June (Jun), July (Jul),
+        August (Aug), September (Sep), October (Oct), November (Nov), December (Dec)
+AM/PM:  AM/PM
+R version 3.6.3 (2020-02-29)
+Platform: x86_64-apple-darwin15.6.0 (64-bit)
+Running under: macOS Catalina 10.15.3
+
+Matrix products: default
+BLAS:   /System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libBLAS.dylib
+LAPACK: /Library/Frameworks/R.framework/Versions/3.6/Resources/lib/libRlapack.dylib
+
+locale:
+[1] zh_TW.UTF-8/zh_TW.UTF-8/zh_TW.UTF-8/C/zh_TW.UTF-8/zh_TW.UTF-8
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+other attached packages:
+[1] jsonlite_1.6.1
+
+loaded via a namespace (and not attached):
+ [1] readr_1.3.1     compiler_3.6.3  R6_2.4.1        hms_0.5.3       tools_3.6.3     pillar_1.4.3   
+ [7] tibble_2.1.3    curl_4.3        Rcpp_1.0.4      crayon_1.3.4    vctrs_0.2.4     knitr_1.28     
+[13] xfun_0.12       pkgconfig_2.0.3 rlang_0.4.5    
