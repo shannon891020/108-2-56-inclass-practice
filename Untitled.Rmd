@@ -591,3 +591,30 @@ majors10_factor <- factor(
 typeof(majors10_factor)
 class(majors10_factor)
 ```
+
+```{r}
+a <- c(2, 3, 5)
+b <- c(4,-1, 3)
+
+a+b
+a-b
+a*b
+a/b
+```
+
+```{r}
+sequenceNums <- c(11, 6, 8, 11, 12, 11, 3, 7, 10, 8)
+print(sequenceNums)
+
+sequenceNums %% 2 # 餘數為1則是奇數，0則是偶數
+```
+```{r}
+5*c(1,3,4)+7
+# 其實是
+c(5)*c(1,3,4)+c(7)
+
+## 對向量5，向量7進行recycle:
+c(5,5,5)*c(1,3,4)+c(7,7,7)
+## Recycle等長後才進行elementwise operation:
+c(5*1+7, 5*3+7, 5*4+7)
+```
