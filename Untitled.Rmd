@@ -81,3 +81,8 @@ str_extract(
   "(?<=民國)[0-9]{2,3}(?=年)"
 ) # 回傳vector 
 ```
+
+```{r}
+level_names<-
+levels(covid19$年齡量)
+```
